@@ -1,0 +1,60 @@
+<html>
+<style>
+* {
+  margin:0;
+  padding:0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.to-top {
+  background: rgb(255, 0, 0);
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#ffffff;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+</style>
+<script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
+</head>
+<body>
+  <!-- change lorem ipsum -->
+
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum eaque tempora iusto nihil debitis quae consequuntur neque magni necessitatibus fuga quo, minus voluptates molestiae placeat quia eos odit quos vero! Quidem laborum odio, architecto obcaecati blanditiis asperiores amet, dignissimos beatae quo ratione a ipsa dolorem ullam animi optio! Facere aperiam expedita blanditiis voluptate officia cupiditate velit! Consectetur aut qui ipsum quis. Alias maiores aliquid veniam debitis repudiandae rem vitae numquam, ut, exercitationem error placeat repellendus assumenda? Facilis expedita asperiores reiciendis dolores fugit inventore praesentium, dolore cumque officiis harum laudantium dolorem dolorum consectetur illum eum quo iusto aliquam placeat dolor deserunt amet nobis non. Quos nesciunt eligendi cupiditate tempore aspernatur animi eius molestias quaerat dolore ratione eos et soluta saepe quod qui distinctio accusantium id eveniet, sint voluptas doloribus porro magnam facere. Illo quia alias voluptate quo hic ea nulla quis atque asperiores consectetur, deleniti iste est fuga, explicabo nostrum. Officia quia consequatur expedita, voluptates iste nisi. Doloribus sapiente minus sequi numquam voluptates quas ea unde quaerat. Ipsa optio deleniti eaque, molestiae nulla porro, distinctio quam quia id facilis eligendi iure asperiores et illo quaerat sequi, atque vitae incidunt quos debitis! Veritatis temporibus eos, corporis commodi laudantium earum maxime delectus expedita, corrupti explicabo, distinctio suscipit eveniet non sint iste error? Obcaecati recusandae amet quam consectetur perspiciatis et necessitatibus quo? Debitis, obcaecati inventore autem sit ipsa eius pariatur voluptatem maxime aliquam ad magnam quisquam deleniti tempore dicta similique fugit dolorem id aliquid rem, iste excepturi alias. Similique saepe, esse modi cumque voluptates impedit voluptas tempora corporis! Perspiciatis ratione excepturi modi possimus quasi at saepe obcaecati libero quos, corporis dolorum temporibus ipsum ipsam velit, assumenda, ullam aperiam. Ducimus inventore ad repudiandae voluptate, architecto cumque fugit sequi repellendus et commodi a qui eveniet quia vero reprehenderit. Necessitatibus consectetur modi quae ad. Odit magni autem modi sequi, quos illum, reiciendis voluptates esse inventore et sed dolor eos, quibusdam atque reprehenderit necessitatibus ad mollitia voluptate libero fugit? Necessitatibus repellendus temporibus sapiente expedita suscipit alias sit. Asperiores atque ab doloribus dignissimos dicta? Sapiente repudiandae quae esse assumenda? Enim soluta, voluptatum nisi similique nulla voluptatibus totam veniam pariatur excepturi? Assumenda id animi voluptas quasi nemo placeat similique quam tenetur et. Velit quam iusto necessitatibus ullam exercitationem unde aliquid accusamus. Voluptatibus aspernatur, nesciunt obcaecati aliquid deleniti praesentium repellat! Necessitatibus, distinctio! Pariatur eligendi neque, voluptates ea alias harum quasi molestias voluptate sed. Dolorum quaerat nemo obcaecati error recusandae tempore voluptatibus qui exercitationem, corporis, aut, similique totam ducimus aspernatur autem minima minus iusto. Voluptatem asperiores, excepturi voluptatum quasi amet dolorum delectus qui. Cupiditate expedita iusto labore, deserunt aperiam nulla eius distinctio adipisci sapiente eaque ratione sunt quaerat cum recusandae voluptates nesciunt quia? Aliquam unde velit, cum explicabo quia sit aspernatur praesentium iure distinctio expedita dolor nobis. Unde natus expedita laudantium commodi reprehenderit qui sed vel repellendus omnis autem, beatae quae nihil eos officiis veritatis doloremque amet assumenda odit quas ipsum tempore fugiat facere esse. Sed nobis, quae aperiam ea similique beatae. Distinctio neque ullam aliquid reiciendis ipsam officia deleniti rerum culpa!
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script>
+ let toTop = document.querySelector(".to-top");
+
+ window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
+  </script>
+</body>
+
+</html>
